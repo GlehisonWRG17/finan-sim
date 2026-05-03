@@ -1,0 +1,176 @@
+/* ========================= */
+/* 🌙 MODO OSCURO */
+/* ========================= */
+
+html[data-theme="dark"] .card {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+html[data-theme="dark"] .card h4 {
+    color: #94a3b8;
+}
+
+html[data-theme="dark"] .card h2 {
+    color: #22c55e;
+}
+
+/* ========================= */
+/* ☀️ MODO CLARO */
+/* ========================= */
+
+html[data-theme="light"] .card {
+    background: #ffffff;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+html[data-theme="light"] .card h4 {
+    color: #334155;
+}
+
+html[data-theme="light"] .card h2 {
+    color: #16a34a;
+}
+
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+.card {
+    border-radius: 18px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* ========================= */
+/* 🔥 HERO */
+/* ========================= */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 26px;
+    color: #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.info p {
+    margin: 6px 0;
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* ========================= */
+/* 🔥 TEAM */
+/* ========================= */
+
+.team {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    border-radius: 15px;
+}
+
+/* ========================= */
+/* 🔥 BOTONES */
+/* ========================= */
+
+.stButton button {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: white;
+    border-radius: 12px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+}
+
+/* ========================= */
+/* 🔥 DEV */
+/* ========================= */
+
+.dev {
+    text-align: center;
+    padding: 15px;
+    color: #facc15;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ========================= */
+/* 🔥 FOOTER */
+/* ========================= */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* 🔥 INFO (bloque académico elegante) */
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+/* cada línea */
+.info p {
+    margin: 0;
+    padding: 6px 14px;
+    font-size: 15px;
+    color: #cbd5f5;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+/* hover elegante */
+.info p:hover {
+    transform: scale(1.05);
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+/* ========================= */
+/* 🔥 ANIMACIÓN */
+/* ========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
